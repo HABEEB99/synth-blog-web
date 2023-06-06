@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-light dark:bg-dark;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply px-3 md:px-8 max-w-[2520px] mx-auto;
+  }
+
+  .icon {
+    @apply text-icon hover:opacity-80 text-xl cursor-pointer transition-all duration-200;
+  }
+
+  .modal {
+    @apply fixed top-0 left-0 w-full h-full flex items-center justify-center bg-neutral-500 opacity-90 z-50;
+  }
+}
