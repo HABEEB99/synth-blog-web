@@ -1,3 +1,4 @@
+import CreatePostDialog from "@/components/create-post-dialog";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Logo from "@/components/logo";
@@ -7,6 +8,7 @@ import ThemeToggler from "@/components/theme-switcher";
 import UserSettings from "@/components/user-settings";
 
 export {
+  CreatePostDialog,
   Footer,
   Header,
   Logo,
